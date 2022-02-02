@@ -1,5 +1,5 @@
 <div class="footer">
-    All Rights Reserver 2022 &copy; Kam Cars.
+    All Rights Reserved 2022 &copy; Kam Cars.
 
 </div>
 
