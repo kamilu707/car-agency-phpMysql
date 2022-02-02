@@ -22,10 +22,10 @@ if (mysqli_connect_errno()) {
 <?php
 include("./templates/base_top.php");
 ?>
-<!-- End header -->
 
+<!-- Start Section -->
 <section>
-    <h1>Add New Cars</h1>
+    <h1>Add New Cars <i class="fas fa-car-alt"></i></h1>
     <br>
     <div class="form_add">
         <?php
@@ -106,10 +106,13 @@ include("./templates/base_top.php");
     <?php
     echo $message;
     ?>
-    <a href="./agence_read.php">See All Cars List</a>
+
+    <!-- See Cars lis view -->
+    <a href="./agence_read.php">See All Cars List <i class="fas fa-clipboard-list"></i></a>
 
 
 </section>
+<!-- End section -->
 
 <!-- Footer global content -->
 <?php

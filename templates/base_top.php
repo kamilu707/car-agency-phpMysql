@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/css/main.css">
-    <title>Document</title>
+    <title>Kam Car Agency</title>
 </head>
 
 <body>
@@ -20,10 +20,10 @@
             <ul>
                 <li><i class="fas fa-home"></i><a href="./index.php">Home</a></li>
                 <li><i class="fas fa-user-plus"></i><a href="./agence_adduser.php">Add user</a></li>
-                <li><i class="fas fa-plus-square"></i><a href="./index.php">New Demand</a></li>
-                <li><i class="fas fa-car-alt"></i><a href="./agence_insert.php">Add Cars</a></li>
+                <li><i class="fas fa-plus-square"></i><a href="./agence_demand.php">New Demand</a></li>
+                <li><i class="fas fa-car-alt"></i><a href="./agence_addcar.php">Add Cars</a></li>
                 <!-- <li><a href="./agence_read.php">List Cars</a></li> -->
-                <li><i class="fas fa-file-alt"></i><a href="./agence_read.php">Status</a></li>
+                <li><i class="fas fa-file-alt"></i><a href="./agence_status.php">Status</a></li>
 
 
             </ul>

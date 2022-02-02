@@ -18,7 +18,7 @@ include("./templates/base_top.php");
 ?>
 <!-- Start Section -->
 <section>
-    <h1>Add New User</h1>
+    <h1>Add New User <i class="fas fa-user-plus"></i></h1>
 
     <div class="form_add">
         <br>
@@ -65,9 +65,10 @@ include("./templates/base_top.php");
 
     <?php
     echo $message;
-
     ?>
 
+    <!-- See Users lis view -->
+    <a href="./agence_read.php">See All Users List <i class="fas fa-clipboard-list"></i></a>
 
 </section>
 

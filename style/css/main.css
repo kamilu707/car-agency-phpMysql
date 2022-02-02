@@ -65,15 +65,29 @@ section{
     justify-content: center;
     padding-top: 20px ;
     background-color: rgb(18, 5, 43);
-    height: fit-content;
+    height: 90vh;
     align-items: center;
     color: #eee;
     font-size: x-large;
     padding-bottom: 60px;
 }
+.section_demand{
+    background-color: darkgreen;
+
+}
+.container_status{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 0px 20px;    
+    margin-top: 20px;
+    color: black;
+    background-color: #fff;
+}
+.demand_status{
+}
 .form_add{
     width: fit-content;
-    margin-top: 50px;
 }
 .form_add div{
     margin-bottom: 20px;
@@ -123,4 +137,10 @@ section a:hover{
     justify-content: center;
     background-color: #eee;
     font-size: 20px;
+}
+
+
+/* Style tables */
+table{
+    border: 1px solid rgb(12, 12, 12);
 }
