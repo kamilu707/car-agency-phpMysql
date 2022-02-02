@@ -73,6 +73,7 @@ section{
 }
 .form_add{
     width: fit-content;
+    margin-top: 50px;
 }
 .form_add div{
     margin-bottom: 20px;

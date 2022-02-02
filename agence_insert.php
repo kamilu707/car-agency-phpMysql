@@ -29,22 +29,24 @@ include("./templates/base_top.php");
     <br>
     <div class="form_add">
         <?php
+        $message = "";
         if (isset($_POST['submit'])) {
             $Matricule = $_POST['Matricule'];
             $Couleur = $_POST['Couleur'];
             $Typecar = $_POST['Typecar'];
             $Manuel = $_POST['Manuel'];
             $marque = $_POST['marque'];
-            echo "<br>";
-            echo $Matricule;
+            // echo "<br>";
+            // echo $Matricule;
             // Step 2: Insert into database.
             $query = "INSERT INTO voiture(Matricule, Couleur, Typecar, Manuel, marque) VALUES ('" . $Matricule . "','" . $Couleur . "','" . $Typecar . "','" . $Manuel . "','" . $marque . "')";
             $result = mysqli_query($connect, $query);
             // if there any problem in query it will stop.
+
             if (!$result) {
                 die("<br>Error in query. <br>" . mysqli_error($connect));
-            } else {
-                echo "<br>Data inserterd.";
+            } elseif ($result) {
+                $message = "<br> <p>Data inserterd.  <i class='far fa-check-circle'></i></p> <br>";
             }
         }
         ?>
@@ -53,28 +55,28 @@ include("./templates/base_top.php");
         <form action="" method="POST">
             <div class="input_dv">
                 <label for="">matricule</label>
-                <input type="text" name="Matricule" id="">
+                <input type="text" name="Matricule" id="" required>
             </div>
 
             <div class="input_dv">
                 <label for="">couleur</label>
-                <input type="text" name="Couleur" id="">
+                <input type="text" name="Couleur" required>
             </div>
 
             <div class="input_dv">
                 <label for="">Type Car</label>
-                <input type="text" name="Typecar" id="">
+                <input type="text" name="Typecar" required>
             </div>
 
             <div class="input_dv">
                 <label for="Matricule">Manuel</label>
-                <input type="text" name="Manuel" id="">
+                <input type="text" name="Manuel" required>
             </div>
 
             <div class="input_dv">
                 <label for="marque">Marque</label>
-                <select name="marque" id="">
-
+                <select name="marque" required>
+                    <option value="">----</option>
                     <?php
                     $query1 = 'SELECT * FROM marque';
                     $resultat1 = mysqli_query($connect, $query1);
@@ -101,7 +103,9 @@ include("./templates/base_top.php");
             </div>
         </form>
     </div>
-
+    <?php
+    echo $message;
+    ?>
     <a href="./agence_read.php">See All Cars List</a>
 
 
