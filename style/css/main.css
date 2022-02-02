@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+header{
+    justify-content: space-between;
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+header .logo{
+    padding-left: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .logo a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+header .logo a{
+    padding-left: 10px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 600px;
+    
+}
+header ul li{
+    list-style: none;
+    color: black;
+    padding: 2px;
+
+}
+
+header ul li:hover{
+    border: 1px rgb(226, 226, 226) solid;
+    cursor: pointer;
+    padding: 2px;
+    background-color: rgb(182, 182, 182);
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px ;
+    background-color: rgb(18, 5, 43);
+    height: fit-content;
+    align-items: center;
+    color: #eee;
+    font-size: x-large;
+    padding-bottom: 60px;
+}
+.form_add{
+    width: fit-content;
+}
+.form_add div{
+    margin-bottom: 20px;
+}
+.form_add label{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+.form_add input{
+    width: 200px;
+    height: 30px;
+}
+
+.form_add select{
+    background-color: white;
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+
+}
+.submit_dv input{
+    margin-top: 20px;
+    background-color: rgb(255, 30, 0);
+    cursor: pointer;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+section a{
+    color: #eee;
+    margin-top: 30px;
+    transition: 0.2s all;
+border: 0.5px dashed #eee;
+text-decoration: none;
+padding: 5px;
+}
+section a:hover{
+    color: tomato;
+}
+
+.footer{
+    background-color: yellowgreen;
+}
