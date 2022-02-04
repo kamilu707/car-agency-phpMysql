@@ -72,20 +72,19 @@ section{
     padding-bottom: 60px;
 }
 .section_demand{
-    background-color: darkgreen;
+    background-color: rgb(24, 24, 24);
 
 }
 .container_status{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-gap: 20px;
     padding: 0px 20px;    
     margin-top: 20px;
     color: black;
     background-color: #fff;
 }
-.demand_status{
-}
+
 .form_add{
     width: fit-content;
 }
@@ -123,9 +122,9 @@ section a{
     color: #eee;
     margin-top: 30px;
     transition: 0.2s all;
-border: 0.5px dashed #eee;
-text-decoration: none;
-padding: 5px;
+    border: 0.5px dashed #eee;
+    text-decoration: none;
+    padding: 5px;
 }
 section a:hover{
     color: tomato;
@@ -141,6 +140,54 @@ section a:hover{
 
 
 /* Style tables */
-table{
-    border: 1px solid rgb(12, 12, 12);
+th,
+td {
+    width: fit-content;
+    /* height: 2rem; */
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 3px 3px;
+}
+
+th {
+    background: lightblue;
+    border-color: white;
+}
+
+/* Style Home Page */
+
+.container_home{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 100%;
+    background-image:url("../images/bg_car.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.container_home .box{
+    text-align: center;
+    background-color: #eee;
+    color: black;
+    border: 1px dashed black;
+
+}
+
+
+.h1_home{
+    text-align: center;
+    color: #eee;
+    background-color: rgb(18, 5, 43);
+}
+.container_home .box img{
+    width: 100px;
+}
+.home_link{
+    display: block;
+    background-color: #ccc;
+    color:black;
+
 }
