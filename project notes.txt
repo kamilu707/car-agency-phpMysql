@@ -1,0 +1,6 @@
+# PHP with database project notes.
+-----------------------------------------
+
+- Add search feature in status page.
+- Add delete feature.
+- fill tables with data using python script. (how to use python sql to fill tables.)
